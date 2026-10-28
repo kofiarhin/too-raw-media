@@ -1,7 +1,7 @@
 # Too Raw Media — Codex Instructions
 
 ## Goal
-Build a small, secure MVP for daily cinematic Christian prayer videos on TikTok. Read `README.md` and `creative.md` before implementation. Apply `.agents/skills/video-generator/SKILL.md` when making videos.
+Build a small, secure MVP for daily cinematic Christian prayer videos on TikTok. Read `README.md` and `instructions/INDEX.md`; load only the relevant instruction file for the task. Apply `.agents/skills/video-generator/SKILL.md` when making videos.
 
 ## Work rules
 - Codex is the chosen coding executor; Beast runs the service.
@@ -18,4 +18,4 @@ Build a small, secure MVP for daily cinematic Christian prayer videos on TikTok.
 At 05:00 Europe/London: select a fresh topic, write an original 45–60 second prayer, synthesize narration via ElevenLabs REST, choose approved indexed assets, compose a 9:16 video with FFmpeg, verify script/audio/captions/format, publish via Buffer after API compatibility and permissions are verified, then store results and clean expired outputs.
 
 ## Asset selection
-Match images and licensed music to a prayer's theme, emotion and story. Avoid repeated scenes and recently used tracks. Never infer TikTok reuse rights from a royalty-free label alone.
+Follow `instructions/asset-selection.md`. Match images and licensed music to a prayer's theme, emotion and story. Avoid repeated scenes and recently used tracks.
