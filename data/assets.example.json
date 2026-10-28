@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "example-sunrise",
+      "type": "image",
+      "path": "images/sunrise-prayer.jpg",
+      "tags": [
+        "gratitude",
+        "sunrise",
+        "hope"
+      ],
+      "description": "Person praying at sunrise",
+      "rights": {
+        "status": "approved",
+        "source": "original"
+      },
+      "lastUsedAt": null
+    },
+    {
+      "id": "example-music",
+      "type": "music",
+      "path": "music/quiet-hope.mp3",
+      "tags": [
+        "peace",
+        "healing"
+      ],
+      "description": "Soft instrumental",
+      "rights": {
+        "status": "pending",
+        "source": "replace with license record",
+        "platforms": []
+      },
+      "lastUsedAt": null
+    }
+  ]
+}
