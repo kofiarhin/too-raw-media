@@ -1,0 +1,3 @@
+# Asset Selection — Too Raw Media
+
+The portal accepts images, video clips and music. Beast owns original files and the live `assets.json`; `data/assets.example.json` only demonstrates the schema. Read the newest authorized live index or sanitized snapshot when accessible. Choose media by prayer theme, mood, tags and recent usage; vary scenes and music. Do not invent asset availability. Only use music or third-party media when the record confirms appropriate TikTok publishing rights; 'royalty-free' alone is not proof. If the index is inaccessible, report that briefly and proceed with creative planning, not claims about actual inventory.
