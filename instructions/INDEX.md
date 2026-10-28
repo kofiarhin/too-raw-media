@@ -1,14 +1,16 @@
-# Instruction Index
+# Too Raw Media — Instruction Index
 
-This file routes requests to small, independently editable rules. Read only the relevant file(s) for the task. Never substitute unrelated personal context for Too Raw Media.
+Start with [the current PRD](../docs/PRD.md), [README](../README.md) and [AGENTS](../AGENTS.md) for scope and safety. Load only the instruction relevant to the requested work.
 
 | Request | Read |
 | --- | --- |
-| Generate image, prayer artwork, or image assets | `instructions/image-generation.md` |
-| Write or choose a prayer | `instructions/prayer-writing.md` |
-| Inspect library, select images/video/music | `instructions/asset-selection.md` |
-| Assemble or quality-check a prayer video | `instructions/video-production.md` and `.agents/skills/video-generator/SKILL.md` |
+| Generate images / visual assets | `instructions/image-generation.md` |
+| Write an original prayer | `instructions/prayer-writing.md` |
+| Browse and select rights-cleared assets | `instructions/asset-selection.md` |
+| Produce and QA a vertical video | `instructions/video-production.md` and `.agents/skills/video-generator/SKILL.md` |
+| Publish or schedule videos | `docs/PRD.md` sections 4.4–4.5, 7 and 9; `instructions/video-production.md` |
+| Manage admin library, JSON storage or cleanup | `docs/PRD.md` sections 4, 6–9 |
 
-Read `README.md` for the project purpose and `AGENTS.md` for coding and operational safety. For creative requests, these files apply even if GitHub cannot be reached, provided their content is already available in the ChatGPT Project. Do not claim to have read live files unless accessed.
+**Current platform:** automatic scheduled and admin-triggered publishing targets YouTube Shorts. TikTok/other platforms are manual downloads, not automatic publishing. Older TikTok publishing statements are obsolete.
 
-The example `data/assets.example.json` is not the live asset index. The live index is on Beast; use it only if an authorized connection or snapshot is available.
+Only the Beast-hosted authorized asset index represents live inventory; `data/assets.example.json` is sample data. Do not claim to have inspected runtime data or generated media without evidence.
