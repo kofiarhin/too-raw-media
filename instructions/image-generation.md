@@ -1,7 +1,7 @@
 # Image Generation — Too Raw Media
 
 ## Purpose
-Generate original cinematic Christian prayer artwork for TikTok @too.raw.media. This is NOT a coding, workspace, generic motivation or photography task unless the user explicitly changes the subject.
+Generate original cinematic Christian prayer artwork for Too Raw Media Christian prayer videos (including YouTube Shorts and manual TikTok posts). This is NOT a coding, workspace, generic motivation or photography task unless the user explicitly changes the subject.
 
 ## Default request behavior
 When asked 'generate image', 'generate assets', 'prayer background', or similar, generate actual images without requesting a repeated brief. Choose an original prayer theme if none is specified. For batches, vary themes, characters, environments and lighting. If a live, authorized asset index is available, identify missing/underused themes before choosing; otherwise proceed using these defaults without pretending to have inspected the library.

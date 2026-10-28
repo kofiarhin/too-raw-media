@@ -1,19 +1,24 @@
 # Video Generator Skill
 
 ## Purpose
-Create a single vertical, cinematic Christian prayer video using approved local media and a finished voiceover.
+
+Plan and produce one vertical cinematic Christian prayer video from approved local assets; this is a **proposed workflow guide**, not an implemented executable skill.
 
 ## Inputs
-Original prayer script, ElevenLabs voiceover, approved assets with tags/rights, approved music, and chosen output location.
+
+Original prayer script, ElevenLabs narration, rights-approved assets/music, metadata index and a server-controlled output directory.
 
 ## Steps
-1. Confirm input files exist and music usage is cleared for TikTok.
-2. Match scenes to the narrative; vary selections based on recent history.
-3. Use FFmpeg to render a 1080x1920 H.264 MP4 at 30 fps with slow cinematic motion, tasteful transitions and balanced narration/music.
-4. Produce synchronized, readable captions; keep text away from screen edges and TikTok controls.
-5. Check full duration, audio, video, caption safety and output readability. Do not publish unless checks pass.
+
+1. Check the selected original files exist and licensing covers the intended destination (YouTube Shorts for automatic/explicit publishing).
+2. Match visuals to each part of the prayer, varying recent asset selections.
+3. Render a 9:16, ideally 1080×1920, H.264 MP4 at 30 fps via FFmpeg with balanced narration/music and tasteful cinematic movement.
+4. Burn in synchronized captions inside safe margins and save a separate SRT and transcript.
+5. Validate duration (target 45–60 seconds), visual/audio decoding, caption timing, rights, complete metadata and output paths.
+6. Persist output and QA state on Beast. Manual jobs are **drafts**; publication is a separate guarded action. Scheduled publication is disabled until separately approved.
 
 ## Outputs
-Captioned MP4, metadata (theme, asset IDs, rights evidence references, duration) and QA result.
 
-**Status:** implementation guide, not an executable skill yet.
+MP4, SRT, transcript, title, description, hashtags, asset IDs, rights evidence and QA/job status.
+
+No blind retries after uncertain YouTube posting, no automatic deletion of original assets. Other platforms are manual download/post targets.

@@ -1,21 +1,29 @@
 # Too Raw Media — Codex Instructions
 
 ## Goal
-Build a small, secure MVP for daily cinematic Christian prayer videos on TikTok. Read `README.md` and `instructions/INDEX.md`; load only the relevant instruction file for the task. Apply `.agents/skills/video-generator/SKILL.md` when making videos.
 
-## Work rules
-- Codex is the chosen coding executor; Beast runs the service.
-- Prefer Node.js, FFmpeg and JSON files. Do not introduce a database or agent framework for the MVP.
-- Keep Post Generator untouched. Track active implementation in Linear.
-- Never put secrets, real customer information, licensed originals, production logs or generated MP4 files in this public repository.
-- Store original media and runtime `assets.json` / `history.json` on Beast, not in Git. Provide read-only sanitized asset-index snapshots to ChatGPT when authorized and available.
-- Use atomic file writes and a single-job lock for runtime state. Check for prior work before retries or publication.
-- Never auto-retry a potentially successful TikTok publication without first confirming status.
-- Publishing must default off. Require explicit authorization before production deployment or turning on unattended publishing.
-- Never claim a completed action without evidence. Tests and dry runs must verify output before activation.
+Implement the scoped MVP in [docs/PRD.md](docs/PRD.md): a secure server-based Christian prayer video factory with admin media CRUD, manual drafts/downloads and optionally scheduled **YouTube Shorts** publishing. Read `README.md` and `instructions/INDEX.md`, then load only relevant instructions. Apply `.agents/skills/video-generator/SKILL.md` for video creation.
 
-## Daily flow (planned)
-At 05:00 Europe/London: select a fresh topic, write an original 45–60 second prayer, synthesize narration via ElevenLabs REST, choose approved indexed assets, compose a 9:16 video with FFmpeg, verify script/audio/captions/format, publish via Buffer after API compatibility and permissions are verified, then store results and clean expired outputs.
+## Operating rules
 
-## Asset selection
-Follow `instructions/asset-selection.md`. Match images and licensed music to a prayer's theme, emotion and story. Avoid repeated scenes and recently used tracks.
+- Codex is the selected coding executor; Beast is the intended Ubuntu VPS runtime. Tracked implementation follows Linear.
+- Prefer a small Node.js frontend/backend, FFmpeg and server-side JSON/filesystem. No database or agent framework for the MVP.
+- Frontend is a client only; Beast owns original assets, `assets.json`, `videos.json`, `history.json`, renders, logs and secure credentials.
+- One authenticated admin; protect **every** file and mutation endpoint. Never trust browser-supplied filesystem paths or access checks.
+- Never commit secrets, original licensed media, user data, production indexes, logs or rendered videos to this public repository.
+- Use atomic JSON writes, safe path checks, one-job locking, backups and idempotent job/publication records.
+- Never blindly retry a possibly successful YouTube publication: reconcile provider state first.
+- Publishing and scheduled automatic cleanup default **off** until the applicable verification and explicit approvals. Production deployment and unattended publication activation require separate approval.
+- Uploaded originals are never removed by automatic cleanup. Retain generated videos marked Keep.
+- Preserve Post Generator unchanged. Do not confuse the new prayer-video product with IdeaHub's historical Too Raw Media urban photography record.
+- Report implementation, verification, commit, merge, deployment and publishing status only when independently evidenced.
+
+## Planned shared generation flow
+
+Manual request or daily **05:00 Europe/London** schedule → original 45–60 second prayer via Codex → approved asset selection → ElevenLabs REST narration → FFmpeg 9:16 vertical video + timed captions → quality gates → draft/ready outputs. Manual jobs stay drafts; only explicitly initiated admin publishing or a separately enabled scheduled job can publish to **YouTube Shorts**.
+
+Buffer remains a candidate publisher until YouTube Shorts API and account support are verified. TikTok and other platforms are manual download/post destinations in this MVP.
+
+## Instructions
+
+Follow `instructions/INDEX.md` and the relevant modular files. Use the approved license/rights metadata and avoid repeating recently used content. The product PRD wins if legacy content guidance still mentions automatic TikTok publishing.
