@@ -9,10 +9,12 @@ Autonomous Christian prayer video production for TikTok.
 - Codex drafts a new prayer, ElevenLabs produces narration, FFmpeg creates a 9:16 captioned video, automated QA checks it, and Buffer publishes after publishing is explicitly enabled.
 - Daily jobs record history and avoid duplicate publication.
 
-## Project files
-- `AGENTS.md`: Codex operating instructions.
-- `creative.md`: prayer writing and visual standards.
-- `data/assets.json`: example asset metadata; production data lives on Beast.
+## Instructions
+Start at [`instructions/INDEX.md`](instructions/INDEX.md) to find the right rule file. Edit one file to change that behavior without rewriting the entire ChatGPT Project instructions.
+
+- `AGENTS.md`: Codex operating and safety rules.
+- `creative.md`: backward-compatible pointer to modular creative rules.
+- `data/assets.example.json`: example asset metadata; production data lives on Beast.
 - `.agents/skills/video-generator/SKILL.md`: proposed video generation workflow.
 
 ## Ownership
